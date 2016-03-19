@@ -1,0 +1,64 @@
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "snowball_analyzer": {
+            "type": "snowball",
+            "language": "English"
+          },
+          "analyzer_lower": {
+            "type": "standard",
+            "lowercase": "true"
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "movie": {
+      "properties": {
+        "language": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+        },
+        "title": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+        },
+        "country": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+        },
+        "time": {
+          "type": "integer"
+        },
+        "director": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+        },
+        "location": {
+          "type": "string",
+          "analyzer" : "analyzer_lower"
+        },
+        "starring": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+
+        },
+        "text": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+        },
+        "runtime": {
+          "type": "integer"
+        },
+        "categories": {
+          "type": "string",
+          "analyzer": "snowball_analyzer"
+
+        }
+      }
+    }
+  }
+}
