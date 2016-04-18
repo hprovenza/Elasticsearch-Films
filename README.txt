@@ -10,4 +10,4 @@ I think all the bugs are worked out!
 
 And I didn’t use any additional packages on this exercise.
 
-This class is my first time doing anything for web so I know it will be very valuable.
+This class is my first time doing anything for web so I know it will be a valuable experience.
